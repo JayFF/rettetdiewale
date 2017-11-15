@@ -4,7 +4,12 @@ from requests.exceptions import HTTPError
 import re
 import csv
 #legend nur für Bundesland 1 Wahlkreis 1 Richtig
-legend=["Bundesland", "Wahlkreis", "Wahlberechtigte Anzahl", "Wähler Anzahl" , "Ungültige Anzahl", "Gültige Anzahl", "CDU Anzahl", "SPD Anzahl", "Grüne Anzahl", "FDP Anzahl", "Linke Anzahl", "AfD Anzahl", "NPD Anzahl", "Freie Wähler Anzahl", "MLPD Anzahl", "BGE Anzahl", "ÖDP Anzahl", "Die PARTEI Anzahl", "EB: KrügerWinands Anzahl", "Tierschutzpartei Anzahl", "PIRATEN Anzahl", "Übrige Anzahl"]
+legend=["Bundesland", "Wahlkreis", "Wahlberechtigte Anzahl", "Waehler Anzahl" ,
+        "Ungültige Anzahl", "Gueltige Anzahl", "CDU Anzahl", "SPD Anzahl",
+        "Gruene Anzahl", "FDP Anzahl", "Linke Anzahl", "AfD Anzahl", "NPD
+        Anzahl", "Freie Waehler Anzahl", "MLPD Anzahl", "BGE Anzahl", "OeDP
+        Anzahl", "Die PARTEI Anzahl", "EB: KruegerWinands Anzahl",
+        "Tierschutzpartei Anzahl", "PIRATEN Anzahl", "Uebrige Anzahl"]
 
 def main():
     with open("data.csv", "w+") as myfile:
